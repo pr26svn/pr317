@@ -5,14 +5,18 @@
 ?>
 <h2>Новости</h2>
 <table>
-	<tr>
-		<td>ID</td>
-		<td>Название новости</td>
-	</tr>
-	<?php foreach($newsList as $arNews):?>
-		<tr>
-			<td><?=$arNews["id"];?></td>
-			<td><?=$arNews["name"];?></td>
-		</tr>
-	<?php endforeach;?>
+    <tr>
+        <td>ID</td>
+        <td>Название новости</td>
+        <td>Действия</td>
+    </tr>
+    <?php foreach($newsList as $arNews):?>
+        <tr>
+            <td><?=$arNews["id"];?></td>
+            <td><?=$arNews["name"];?></td>
+            <td>
+                <a href="/news.php?func=delete&id=<?=$arNews["id"];?>">Удалить</a><br/>
+            </td>
+        </tr>
+    <?php endforeach;?>
 </table>
