@@ -2,8 +2,9 @@
 
 if(isset($_GET['func'])=='delete' )
 {
-    if($id = $_GET['id'] != 0)
+    if(($id = $_GET['id']) != 0)
         news::delete($id);
+
 }
 
 class news
