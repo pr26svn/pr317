@@ -20,7 +20,10 @@ $news = news::getList();
                         <?=$new["name"]?>
                     </div>
                 </a>
-                <div class="actions"><a href="delete.php?id=<?=$new["id"]?>"><img src="images/trash.png"></a></div>
+                <div class="actions">
+                    <a href="delete.php?id=<?=$new["id"]?>"><img src="images/trash.png"></a>
+                    <a href="edit.php?id=<?=$new["id"]?>"><img src="images/pencil.png"></a>
+                </div>
             </div>
         <?php
         endforeach;
