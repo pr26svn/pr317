@@ -11,19 +11,19 @@ $news = news::getList();
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <ul>
         <?php
             foreach ($news as $new):
         ?>
-        <a href="new.php?id=<?=$new["id"]?>">
-            <li>
-                <?=$new["name"]?>
-            </li>
-        </a>
-            <a href="delete.php?id=<?=$new["id"]?>">DEL</a>
+            <div class="news">
+                <a href="new.php?id=<?=$new["id"]?>">
+                    <div class="title">
+                        <?=$new["name"]?>
+                    </div>
+                </a>
+                <div class="actions"><a href="delete.php?id=<?=$new["id"]?>"><img src="images/trash.png"></a></div>
+            </div>
         <?php
         endforeach;
         ?>
-    </ul>
 </body>
 </html>

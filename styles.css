@@ -1,0 +1,29 @@
+.body,html{
+    margin: 0;
+    padding: 0;
+}
+.news{
+    background: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.news .title{
+    color: black;
+    font-size: 25px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.news .title:hover{
+    transform: translate(25%,0) scale(1.5);
+}
+.news .actions img{
+    width: 20px;
+}
+.news .actions{
+    padding: 10px;
+}
