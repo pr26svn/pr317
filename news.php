@@ -8,6 +8,7 @@ $news = news::getList();
 <head>
     <meta charset="utf-8">
     <title>Вывод новостей</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <ul>
@@ -19,6 +20,7 @@ $news = news::getList();
                 <?=$new["name"]?>
             </li>
         </a>
+            <a href="delete.php?id=<?=$new["id"]?>">DEL</a>
         <?php
         endforeach;
         ?>

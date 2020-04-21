@@ -8,4 +8,7 @@ class news{
         $row = DB::run("SELECT * FROM news WHERE id = ?", array($id))->fetch();
         return $row;
     }
+    public static function deleteById($id){
+        DB::run("DELETE FROM news WHERE id = ?",array($id));
+    }
 }
