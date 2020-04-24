@@ -15,4 +15,8 @@
         public static function delNews($id){
             $del = DB::run("DELETE FROM tbnews WHERE id=?", array($id));
         }
+
+        public static function updateNews($id, $data = array()){
+            $result = DB::run("UPDATE tbnews SET content=?, name=? WHERE id=?", array($data['content'],$data['name'],$data['id']));
+        }
     }

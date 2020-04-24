@@ -21,6 +21,9 @@
                 <td>
                     <a href="/news.php?id=<?=$arNews["id"];?>">
                         Удалить
+                    </a><br>
+                    <a href="/editNews.php?id=<?=$arNews["id"]?>">
+                        Изменить
                     </a>
                 </td>
             </tr>
