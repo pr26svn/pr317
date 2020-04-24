@@ -15,7 +15,7 @@
             <td><?=$arNews["id"];?></td>
             <td><?=$arNews["name"];?></td>
             <td>
-                <a href="/news.php?func=delete&id=<?=$arNews["id"];?>">Удалить</a><br/>
+                <a href="/deletenew.php?&id=<?=$arNews["id"];?>">Удалить</a><br/>
             </td>
         </tr>
     <?php endforeach;?>

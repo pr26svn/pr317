@@ -1,12 +1,9 @@
 <?php
-
 if(isset($_GET['func'])=='delete' )
 {
     if(($id = $_GET['id']) != 0)
         news::delete($id);
-
 }
-
 class news
 {
     public static function delete($id){
