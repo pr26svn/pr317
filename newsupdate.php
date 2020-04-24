@@ -1,13 +1,11 @@
-<?php 
-    require('controllers/news.php');
-?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Новости</title>
-	 <link rel="stylesheet" href="style4.css">
+	<title>Добавление новостей</title>
+	 <link rel="stylesheet" href="style2.css">
      <script type="text/javascript">
      </script>
 </head>
@@ -33,22 +31,30 @@
 <section id="wrapper">
 	<div class="middle">
 		
-<?php foreach($newsList as $arNews): ?>
-<div class="new">
-<img class="newsimg" src="<?= $arNews['img']; ?>">
-<div class="newsdiv">
-<h1> <?= $arNews['h']; ?></h1>
-<p> <?= $arNews['p']; ?>
-</p>
-</div>
+<div class="registration">
+    <div class="form">
+<p> <?php 
+require('controllers/newsupdate.php');
 
-    </div>
-    <?php echo '<div class="spacebar"></div>';?>
-<?php endforeach; ?>
+
+?></p>
+<form method="post" action="">
+	<input type="text" class="pol" id="id" name="id" placeholder="Введите id новости"><br>
+<input type="text" class="pol" id="img" name="img" placeholder="Введите путь до img"><br>
+<input type="text" class="pol" id="h" name="h" placeholder="Введите заголовок"><br>
+<textarea class="pol" id="p" name="p"> </textarea><br>
+
+<br>
+
+<br>
+<br>
+<input type="submit" value="Обновить" class="buttons" name="submit">
+<input type="button" value="Вернуться к новостям" class="buttons" name="ret" onclick='location.href="news.php"'>
+</form>
+
+</div>
+</div>
 		</div>
-<input type="button" name="addnews" class="buttons2" value="Удалить новость" onclick='location.href="newsdelete.php"'>
-        <input type="button" name="addnews" class="buttons2" value="Изменить новость" onclick='location.href="newsupdate.php"'>
-        <input type="button" name="addnews" class="buttons2" value="Добавить новость" onclick='location.href="newsadd.php"'>
 
 
 </section>
