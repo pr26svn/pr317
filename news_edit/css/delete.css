@@ -1,0 +1,27 @@
+.text {
+    display: inline-block;
+    font-size: 200%;
+    text-align: center;
+}
+
+p {
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    height: 30px;
+}
+.link:hover {
+    font-size: 210%;
+    text-shadow: 3px 3px 5px black;
+}
+
+body {
+    font-family: 'Century Gothic';
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

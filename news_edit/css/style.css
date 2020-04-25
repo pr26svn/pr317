@@ -1,0 +1,97 @@
+#content {
+    width: 100% !important;
+    height: 100vh;
+}
+#news-block {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    width: 75%;
+    margin-left: 50%;
+    transform: translate(-50%, 10px);
+    height: 80vh;
+    overflow-y: scroll;
+}
+#news-block::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+
+#news-block::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px gray;
+    border-radius: 5px;
+}
+
+#news-block::-webkit-scrollbar-thumb {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 3px gray;
+}
+body {
+    font-family: "Century Gothic" !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+.del-button {
+    background-image: url("../img/del1.png");
+}
+.del-button:hover {
+    background-image: url("../img/del2.png");
+    cursor: pointer;
+}
+.corr-button {
+    background-image: url("../img/edit1.png");
+}
+.corr-button:hover {
+    background-image: url("../img/edit2.png");
+    cursor: pointer;
+}
+.news-buttons {
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    margin: 5px;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
+}
+.buttons-panel {
+    padding-top: 20px;
+    width: 10%;
+    height: 40px;
+}
+.news-single {
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+.news-single:hover .news-buttons {
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.news-header-block {
+    display: flex;
+}
+.news-description {
+    overflow: hidden;
+}
+.news-header {
+    width: 90%;
+    display: inline-block;
+}
+.show-button {
+    border: none;
+    border-bottom: 1px dashed black;
+    margin: 5px 0 15px 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.show-button:focus {
+    outline: none;
+}
