@@ -15,7 +15,7 @@ class news
         return $row ;
     }
 
-    public static function updatenews($id, $data=array()){
+    public static function updateNews($id, $data=array()){
         $result = DB::run("UPDATE news SET name=?,content=? WHERE id=?", array($data['name'],$data['content'],$id));
         return $result;
     }
