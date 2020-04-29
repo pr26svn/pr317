@@ -15,14 +15,8 @@ class news
         return $row ;
     }
 
-    public static function update($id, $data=array()){
-        $str="";
-        foreach($data as $key=>$val){
-            $str.= $key."='".$val."', ";
-        }
-        $str = substr($str,0,-2);
-        $data["id"]=$id;
-        $result = DB::run("UPDATE news SET ".$str." WHERE id=?", array($id));
+    public static function updatenews($id, $data=array()){
+        $result = DB::run("UPDATE news SET name=?,content=? WHERE id=?", array($data['name'],$data['content'],$id));
         return $result;
     }
 
