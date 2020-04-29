@@ -7,11 +7,11 @@ if(isset($_POST['id']))
     $newsList=news::getByID($_GET['id']);
 ?>
 <a href="news.php"><h2>Назад</h2></a>
-<form method="POST" style="display: inline-grid">
-    <label for="text">Название</label>
-    <input type="text"  name="name" value="<?=$newsList['name']?>">
-    <label for="text">Контекст</label>
-    <textarea name="context" ><?=$newsList['context']?></textarea>
+<form method="POST">
+    <label for="text">Название</label></br>
+    <input type="text"  name="name" value="<?=$newsList['name']?>"></br>
+    <label for="text">Контент</label></br>
+    <textarea name="content" ><?=$newsList['content']?></textarea></br>
     <input type="hidden" name="id" value="<?=$_GET['id'];?>">
-    <button type="submit" style="margin:10px">Отправить</button>
+    <button type="submit">Отправить</button>
 </form>

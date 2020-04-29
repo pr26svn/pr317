@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 15 2020 г., 02:53
+-- Время создания: Апр 29 2020 г., 05:19
 -- Версия сервера: 10.3.13-MariaDB-log
 -- Версия PHP: 7.1.32
 
@@ -31,16 +31,16 @@ SET time_zone = "+00:00";
 CREATE TABLE `news` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `context` text DEFAULT NULL
+  `content` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `news`
 --
 
-INSERT INTO `news` (`id`, `name`, `context`) VALUES
-(3, 'Новость 3', NULL),
-(4, 'Новость 4', NULL);
+INSERT INTO `news` (`id`, `name`, `content`) VALUES
+(10, 'Новость 29-04-2020', 'Контент 29-04-2020'),
+(11, 'Новость 30-04-2020', 'Контент 30-04-2020');
 
 --
 -- Индексы сохранённых таблиц
@@ -60,7 +60,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
