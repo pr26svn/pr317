@@ -5,7 +5,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/controllers/news.php");
 $idNews = $_GET["id"];
 $newsList = news::getByID($idNews);
 if(isset($_POST["id"])){
-	news::edit($_POST["id"], $_POST["name"], $_POST["theme"], $_POST["body"]);
+	news::edit($_POST["id"], $_POST["name"]);
 	header("location: /news.php");
 }
 ?>

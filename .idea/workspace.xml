@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ca4eca-2ffa-43b4-94b0-be2049205c5e" name="Default Changelist" comment="" />
+    <list default="true" id="63ca4eca-2ffa-43b4-94b0-be2049205c5e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/edit.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +23,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bA90OxjFsJrdJrLSzwr9dU3ohF" />
@@ -42,16 +59,46 @@
       <updated>1588063806536</updated>
       <workItem from="1588063807703" duration="2007000" />
       <workItem from="1588066186563" duration="192000" />
+      <workItem from="1588066398529" duration="554000" />
+      <workItem from="1588160042228" duration="74000" />
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1588066495116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588066495116</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="697" y="324" key="FileChooserDialogImpl" timestamp="1588066214960">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="697" y="324" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1588066214960" />
+    <state x="761" y="446" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1588066943077">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="761" y="446" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588066943077" />
   </component>
 </project>
